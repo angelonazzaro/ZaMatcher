@@ -1,0 +1,11 @@
+class HairColors:
+    BLACK = "Black"
+    BROWN = "Brown"
+    BLONDE = "Blonde"
+    RED = "Red"
+    GREY = "Grey"
+    WHITE = "White"
+    PURPLE = "Purple"
+    BLUE = "Blue"
+    GREEN = "Green"
+    PINK = "Pink"

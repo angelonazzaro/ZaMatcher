@@ -1,0 +1,11 @@
+class EyeShapes:
+    ALMOND = "Almond"
+    ROUND = "Round"
+    MONOLID = "Monolid"
+    PROTRUDING = "Protruding"
+    DOWNTURNED = "Downturned"
+    UPTURNED = "Upturned"
+    CLOSESET = "Close-set"
+    WIDESET = "Wide-set"
+    DEEPSET = "Deep-set"
+    HOODED = "Hooded"
