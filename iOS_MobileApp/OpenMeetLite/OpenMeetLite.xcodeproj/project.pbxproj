@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA58B9E92993D4EC00AAD752 /* DataForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58B9E82993D4EC00AAD752 /* DataForm.storyboard */; };
+		DA58BA072993F37800AAD752 /* DataFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA062993F37800AAD752 /* DataFormController.swift */; };
+		DA58BA0929941A0100AAD752 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58BA0829941A0100AAD752 /* Homepage.storyboard */; };
+		DA58BA0B2994265E00AAD752 /* HomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0A2994265E00AAD752 /* HomepageController.swift */; };
+		DA58BA0D29942FA900AAD752 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0C29942FA900AAD752 /* TabController.swift */; };
+		DA58BA0F2994362A00AAD752 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0E2994362A00AAD752 /* MapController.swift */; };
+		DA58BA1129944AA100AAD752 /* Meeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA1029944AA100AAD752 /* Meeter.swift */; };
+		DA58BA1329944C6F00AAD752 /* InterestForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58BA1229944C6F00AAD752 /* InterestForm.storyboard */; };
+		DA58BA1529944E6100AAD752 /* InterestFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA1429944E6100AAD752 /* InterestFormController.swift */; };
+		DAD94A352992CA01003AB24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A342992CA01003AB24E /* AppDelegate.swift */; };
+		DAD94A372992CA01003AB24E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A362992CA01003AB24E /* SceneDelegate.swift */; };
+		DAD94A392992CA01003AB24E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A382992CA01003AB24E /* ViewController.swift */; };
+		DAD94A3C2992CA01003AB24E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD94A3A2992CA01003AB24E /* Main.storyboard */; };
+		DAD94A3E2992CA02003AB24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD94A3D2992CA02003AB24E /* Assets.xcassets */; };
+		DAD94A412992CA02003AB24E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD94A3F2992CA02003AB24E /* LaunchScreen.storyboard */; };
+		DAD94A4C2992CA02003AB24E /* OpenMeetLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A4B2992CA02003AB24E /* OpenMeetLiteTests.swift */; };
+		DAD94A562992CA02003AB24E /* OpenMeetLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A552992CA02003AB24E /* OpenMeetLiteUITests.swift */; };
+		DAD94A582992CA02003AB24E /* OpenMeetLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A572992CA02003AB24E /* OpenMeetLiteUITestsLaunchTests.swift */; };
+		DAD94A662992CA8C003AB24E /* OpenMeet_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD94A652992CA8C003AB24E /* OpenMeet_1024.png */; };
+		DAD94A6C299302DC003AB24E /* RegistrationForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD94A6B299302DC003AB24E /* RegistrationForm.storyboard */; };
+		DAD94A6E2993056A003AB24E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A6D2993056A003AB24E /* RegistrationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAD94A482992CA02003AB24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD94A292992CA01003AB24E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD94A302992CA01003AB24E;
+			remoteInfo = OpenMeetLite;
+		};
+		DAD94A522992CA02003AB24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD94A292992CA01003AB24E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD94A302992CA01003AB24E;
+			remoteInfo = OpenMeetLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA58B9E82993D4EC00AAD752 /* DataForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataForm.storyboard; sourceTree = "<group>"; };
+		DA58BA062993F37800AAD752 /* DataFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormController.swift; sourceTree = "<group>"; };
+		DA58BA0829941A0100AAD752 /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		DA58BA0A2994265E00AAD752 /* HomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
+		DA58BA0C29942FA900AAD752 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		DA58BA0E2994362A00AAD752 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		DA58BA1029944AA100AAD752 /* Meeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeter.swift; sourceTree = "<group>"; };
+		DA58BA1229944C6F00AAD752 /* InterestForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterestForm.storyboard; sourceTree = "<group>"; };
+		DA58BA1429944E6100AAD752 /* InterestFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestFormController.swift; sourceTree = "<group>"; };
+		DAD94A312992CA01003AB24E /* OpenMeetLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMeetLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD94A342992CA01003AB24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAD94A362992CA01003AB24E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAD94A382992CA01003AB24E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD94A3B2992CA01003AB24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAD94A3D2992CA02003AB24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAD94A402992CA02003AB24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAD94A422992CA02003AB24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD94A472992CA02003AB24E /* OpenMeetLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenMeetLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD94A4B2992CA02003AB24E /* OpenMeetLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeetLiteTests.swift; sourceTree = "<group>"; };
+		DAD94A512992CA02003AB24E /* OpenMeetLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenMeetLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD94A552992CA02003AB24E /* OpenMeetLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeetLiteUITests.swift; sourceTree = "<group>"; };
+		DAD94A572992CA02003AB24E /* OpenMeetLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeetLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAD94A652992CA8C003AB24E /* OpenMeet_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OpenMeet_1024.png; path = ../../../OpenMeet_1024.png; sourceTree = "<group>"; };
+		DAD94A6B299302DC003AB24E /* RegistrationForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationForm.storyboard; sourceTree = "<group>"; };
+		DAD94A6D2993056A003AB24E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD94A2E2992CA01003AB24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A442992CA02003AB24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A4E2992CA02003AB24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAD94A282992CA01003AB24E = {
+			isa = PBXGroup;
+			children = (
+				DAD94A332992CA01003AB24E /* OpenMeetLite */,
+				DAD94A4A2992CA02003AB24E /* OpenMeetLiteTests */,
+				DAD94A542992CA02003AB24E /* OpenMeetLiteUITests */,
+				DAD94A322992CA01003AB24E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD94A322992CA01003AB24E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A312992CA01003AB24E /* OpenMeetLite.app */,
+				DAD94A472992CA02003AB24E /* OpenMeetLiteTests.xctest */,
+				DAD94A512992CA02003AB24E /* OpenMeetLiteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD94A332992CA01003AB24E /* OpenMeetLite */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A6A2992D6E8003AB24E /* View Controllers */,
+				DAD94A692992D6D7003AB24E /* Storyboards */,
+				DAD94A642992CA83003AB24E /* Images */,
+				DAD94A342992CA01003AB24E /* AppDelegate.swift */,
+				DAD94A362992CA01003AB24E /* SceneDelegate.swift */,
+				DAD94A3D2992CA02003AB24E /* Assets.xcassets */,
+				DAD94A422992CA02003AB24E /* Info.plist */,
+				DA58BA1029944AA100AAD752 /* Meeter.swift */,
+			);
+			path = OpenMeetLite;
+			sourceTree = "<group>";
+		};
+		DAD94A4A2992CA02003AB24E /* OpenMeetLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A4B2992CA02003AB24E /* OpenMeetLiteTests.swift */,
+			);
+			path = OpenMeetLiteTests;
+			sourceTree = "<group>";
+		};
+		DAD94A542992CA02003AB24E /* OpenMeetLiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A552992CA02003AB24E /* OpenMeetLiteUITests.swift */,
+				DAD94A572992CA02003AB24E /* OpenMeetLiteUITestsLaunchTests.swift */,
+			);
+			path = OpenMeetLiteUITests;
+			sourceTree = "<group>";
+		};
+		DAD94A642992CA83003AB24E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A652992CA8C003AB24E /* OpenMeet_1024.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DAD94A692992D6D7003AB24E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A3A2992CA01003AB24E /* Main.storyboard */,
+				DAD94A3F2992CA02003AB24E /* LaunchScreen.storyboard */,
+				DAD94A6B299302DC003AB24E /* RegistrationForm.storyboard */,
+				DA58B9E82993D4EC00AAD752 /* DataForm.storyboard */,
+				DA58BA0829941A0100AAD752 /* Homepage.storyboard */,
+				DA58BA1229944C6F00AAD752 /* InterestForm.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DAD94A6A2992D6E8003AB24E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAD94A382992CA01003AB24E /* ViewController.swift */,
+				DAD94A6D2993056A003AB24E /* RegistrationController.swift */,
+				DA58BA062993F37800AAD752 /* DataFormController.swift */,
+				DA58BA0A2994265E00AAD752 /* HomepageController.swift */,
+				DA58BA0C29942FA900AAD752 /* TabController.swift */,
+				DA58BA0E2994362A00AAD752 /* MapController.swift */,
+				DA58BA1429944E6100AAD752 /* InterestFormController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD94A302992CA01003AB24E /* OpenMeetLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD94A5B2992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLite" */;
+			buildPhases = (
+				DAD94A2D2992CA01003AB24E /* Sources */,
+				DAD94A2E2992CA01003AB24E /* Frameworks */,
+				DAD94A2F2992CA01003AB24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenMeetLite;
+			productName = OpenMeetLite;
+			productReference = DAD94A312992CA01003AB24E /* OpenMeetLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAD94A462992CA02003AB24E /* OpenMeetLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD94A5E2992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLiteTests" */;
+			buildPhases = (
+				DAD94A432992CA02003AB24E /* Sources */,
+				DAD94A442992CA02003AB24E /* Frameworks */,
+				DAD94A452992CA02003AB24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD94A492992CA02003AB24E /* PBXTargetDependency */,
+			);
+			name = OpenMeetLiteTests;
+			productName = OpenMeetLiteTests;
+			productReference = DAD94A472992CA02003AB24E /* OpenMeetLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAD94A502992CA02003AB24E /* OpenMeetLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD94A612992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLiteUITests" */;
+			buildPhases = (
+				DAD94A4D2992CA02003AB24E /* Sources */,
+				DAD94A4E2992CA02003AB24E /* Frameworks */,
+				DAD94A4F2992CA02003AB24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD94A532992CA02003AB24E /* PBXTargetDependency */,
+			);
+			name = OpenMeetLiteUITests;
+			productName = OpenMeetLiteUITests;
+			productReference = DAD94A512992CA02003AB24E /* OpenMeetLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD94A292992CA01003AB24E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					continueBtn,
+				);
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DAD94A302992CA01003AB24E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DAD94A462992CA02003AB24E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DAD94A302992CA01003AB24E;
+					};
+					DAD94A502992CA02003AB24E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DAD94A302992CA01003AB24E;
+					};
+				};
+			};
+			buildConfigurationList = DAD94A2C2992CA01003AB24E /* Build configuration list for PBXProject "OpenMeetLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAD94A282992CA01003AB24E;
+			productRefGroup = DAD94A322992CA01003AB24E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD94A302992CA01003AB24E /* OpenMeetLite */,
+				DAD94A462992CA02003AB24E /* OpenMeetLiteTests */,
+				DAD94A502992CA02003AB24E /* OpenMeetLiteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD94A2F2992CA01003AB24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA58BA1329944C6F00AAD752 /* InterestForm.storyboard in Resources */,
+				DA58B9E92993D4EC00AAD752 /* DataForm.storyboard in Resources */,
+				DAD94A412992CA02003AB24E /* LaunchScreen.storyboard in Resources */,
+				DAD94A3E2992CA02003AB24E /* Assets.xcassets in Resources */,
+				DAD94A3C2992CA01003AB24E /* Main.storyboard in Resources */,
+				DAD94A662992CA8C003AB24E /* OpenMeet_1024.png in Resources */,
+				DAD94A6C299302DC003AB24E /* RegistrationForm.storyboard in Resources */,
+				DA58BA0929941A0100AAD752 /* Homepage.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A452992CA02003AB24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A4F2992CA02003AB24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD94A2D2992CA01003AB24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD94A392992CA01003AB24E /* ViewController.swift in Sources */,
+				DAD94A352992CA01003AB24E /* AppDelegate.swift in Sources */,
+				DA58BA072993F37800AAD752 /* DataFormController.swift in Sources */,
+				DA58BA0B2994265E00AAD752 /* HomepageController.swift in Sources */,
+				DAD94A6E2993056A003AB24E /* RegistrationController.swift in Sources */,
+				DA58BA0D29942FA900AAD752 /* TabController.swift in Sources */,
+				DA58BA1129944AA100AAD752 /* Meeter.swift in Sources */,
+				DA58BA1529944E6100AAD752 /* InterestFormController.swift in Sources */,
+				DA58BA0F2994362A00AAD752 /* MapController.swift in Sources */,
+				DAD94A372992CA01003AB24E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A432992CA02003AB24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD94A4C2992CA02003AB24E /* OpenMeetLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD94A4D2992CA02003AB24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD94A562992CA02003AB24E /* OpenMeetLiteUITests.swift in Sources */,
+				DAD94A582992CA02003AB24E /* OpenMeetLiteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAD94A492992CA02003AB24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD94A302992CA01003AB24E /* OpenMeetLite */;
+			targetProxy = DAD94A482992CA02003AB24E /* PBXContainerItemProxy */;
+		};
+		DAD94A532992CA02003AB24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD94A302992CA01003AB24E /* OpenMeetLite */;
+			targetProxy = DAD94A522992CA02003AB24E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAD94A3A2992CA01003AB24E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD94A3B2992CA01003AB24E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAD94A3F2992CA02003AB24E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD94A402992CA02003AB24E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD94A592992CA02003AB24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAD94A5A2992CA02003AB24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD94A5C2992CA02003AB24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2S446NS4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenMeetLite/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "OpenMeet Lite";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DAD94A5D2992CA02003AB24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2S446NS4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenMeetLite/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "OpenMeet Lite";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DAD94A5F2992CA02003AB24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenMeetLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenMeetLite";
+			};
+			name = Debug;
+		};
+		DAD94A602992CA02003AB24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenMeetLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenMeetLite";
+			};
+			name = Release;
+		};
+		DAD94A622992CA02003AB24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenMeetLite;
+			};
+			name = Debug;
+		};
+		DAD94A632992CA02003AB24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openmeet.OpenMeetLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenMeetLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD94A2C2992CA01003AB24E /* Build configuration list for PBXProject "OpenMeetLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD94A592992CA02003AB24E /* Debug */,
+				DAD94A5A2992CA02003AB24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD94A5B2992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD94A5C2992CA02003AB24E /* Debug */,
+				DAD94A5D2992CA02003AB24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD94A5E2992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD94A5F2992CA02003AB24E /* Debug */,
+				DAD94A602992CA02003AB24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD94A612992CA02003AB24E /* Build configuration list for PBXNativeTarget "OpenMeetLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD94A622992CA02003AB24E /* Debug */,
+				DAD94A632992CA02003AB24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD94A292992CA01003AB24E /* Project object */;
+}
