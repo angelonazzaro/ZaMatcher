@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="XPr-Ku-JOF">
+            <objects>
+                <viewController storyboardIdentifier="discover_page" id="6nL-g2-SlZ" customClass="HomepageController" customModule="OpenMeetLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cCc-oE-8Ys">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Df-wD-PI9">
+                                <rect key="frame" x="0.0" y="84" width="393" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WYL-0u-6ll" appends="YES" id="ikd-0h-tWq"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-Na-dw5">
+                                <rect key="frame" x="172" y="724" width="48" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.up" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM0-O5-THw">
+                                <rect key="frame" x="172" y="84" width="48" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name Surname, Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df1-Z3-tI5">
+                                <rect key="frame" x="16" y="604" width="222" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City - Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-gm-0Wg">
+                                <rect key="frame" x="16" y="641" width="222" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Utg-Q1-4ja"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Discover" id="PKr-5w-xVy">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACT-09-CiG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="WYL-0u-6ll"/>
+                <swipeGestureRecognizer direction="left" id="qKR-Rv-xKl"/>
+                <swipeGestureRecognizer direction="up" id="ch3-o1-wq6"/>
+                <swipeGestureRecognizer direction="down" id="FQP-my-Ni5"/>
+            </objects>
+            <point key="canvasLocation" x="-1373" y="585"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="oR5-7H-Qij">
+            <objects>
+                <viewController id="fV1-nT-kiT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k0n-YJ-XLf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="F8l-j1-jO0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenMeet_1024.png" id="SDp-vd-z3w">
+                                        <rect key="frame" x="131" y="265" width="130" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="αlpha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJH-fu-YEr">
+                                        <rect key="frame" x="136" y="396" width="121" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="gl8-zs-KUn"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aJH-fu-YEr" firstAttribute="leading" secondItem="gl8-zs-KUn" secondAttribute="leading" constant="136" id="2Yr-eb-PYv"/>
+                                    <constraint firstItem="gl8-zs-KUn" firstAttribute="bottom" secondItem="aJH-fu-YEr" secondAttribute="bottom" constant="313" id="SDc-3j-6Wi"/>
+                                    <constraint firstItem="gl8-zs-KUn" firstAttribute="trailing" secondItem="aJH-fu-YEr" secondAttribute="trailing" constant="136" id="i1K-qr-qCs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FfM-ZW-Jxz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" id="Cm0-Ak-BZE">
+                        <imageReference key="image" image="message" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="message.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDq-o6-UCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2515" y="585"/>
+        </scene>
+        <!--Tab Controller-->
+        <scene sceneID="njh-vN-CAN">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar_controller" id="pxR-tQ-3QK" customClass="TabController" customModule="OpenMeetLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bp9-f0-RZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="Tabbar" destination="Bp9-f0-RZ3" id="lq2-jc-ULA"/>
+                        <segue destination="fV1-nT-kiT" kind="relationship" relationship="viewControllers" id="m8i-Ye-JEI"/>
+                        <segue destination="6nL-g2-SlZ" kind="relationship" relationship="viewControllers" id="Vrg-8R-4R6"/>
+                        <segue destination="oi8-lZ-hHh" kind="relationship" relationship="viewControllers" id="rTN-6s-lSd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pze-oC-43z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1373" y="-280"/>
+        </scene>
+        <!--Item 3-->
+        <scene sceneID="npW-DC-XLz">
+            <objects>
+                <viewController title="Item 3" id="oi8-lZ-hHh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lb3-sT-RzN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenMeet_1024.png" id="Sf7-kQ-IEc">
+                                <rect key="frame" x="131" y="265" width="130" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="αlpha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBs-b3-qKj">
+                                <rect key="frame" x="136" y="396" width="121" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mfm-oC-5Sr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mfm-oC-5Sr" firstAttribute="trailing" secondItem="CBs-b3-qKj" secondAttribute="trailing" constant="136" id="ZuH-Ak-Mad"/>
+                            <constraint firstItem="CBs-b3-qKj" firstAttribute="leading" secondItem="Mfm-oC-5Sr" secondAttribute="leading" constant="136" id="as6-sy-ryg"/>
+                            <constraint firstItem="Mfm-oC-5Sr" firstAttribute="bottom" secondItem="CBs-b3-qKj" secondAttribute="bottom" constant="313" id="oqy-yp-7HZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="Kjy-cy-p5F">
+                        <imageReference key="image" image="person.circle" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="person.circle.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptl-dv-exA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OpenMeet_1024.png" width="1024" height="1024"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.up" catalog="system" width="128" height="70"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

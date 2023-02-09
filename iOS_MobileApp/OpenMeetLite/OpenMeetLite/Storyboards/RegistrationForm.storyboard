@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="registration_form" id="Y6W-OH-hqX" customClass="RegistrationController" customModule="OpenMeetLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uru-kn-ZBy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenMeet_1024.png" id="rco-Jx-JPd">
+                                <rect key="frame" x="131" y="97" width="130" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenMeet Lite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWH-mO-4q6">
+                                <rect key="frame" x="125" y="217" width="141" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="LvY-3K-whB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SP4-4R-px8">
+                                <rect key="frame" x="138" y="701" width="118" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="ETM-R9-Fc0"/>
+                                    <constraint firstAttribute="height" constant="50" id="Hha-Xp-QsG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Sign Up"/>
+                                <connections>
+                                    <action selector="didButtonClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ws5-mP-kvR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jQK-Uo-nGG">
+                                <rect key="frame" x="52" y="278" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="LQe-AY-s08"/>
+                                </constraints>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="n0Q-IC-Dks">
+                                <rect key="frame" x="52" y="376" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="exW-21-zub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="family-name"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="hKg-r6-ra0">
+                                <rect key="frame" x="37" y="463" width="320" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-3187256400">
+                                    <!--1900-01-01 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ypw-Gt-g9o" userLabel="Name">
+                                <rect key="frame" x="52" y="327" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="4nk-CY-I7F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayr-vm-dLg">
+                                <rect key="frame" x="52" y="438" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BZI-ur-mjW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="n0Q-IC-Dks" secondAttribute="trailing" constant="51" id="2aQ-Dl-EAi"/>
+                            <constraint firstItem="jQK-Uo-nGG" firstAttribute="top" secondItem="sWH-mO-4q6" secondAttribute="bottom" constant="34" id="61X-h9-jBh"/>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="SP4-4R-px8" secondAttribute="trailing" constant="137" id="98K-NX-RpD"/>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="hKg-r6-ra0" secondAttribute="trailing" constant="36" id="Iu1-XK-Pn7"/>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="jQK-Uo-nGG" secondAttribute="trailing" constant="51" id="Jif-lN-1Ec"/>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="sWH-mO-4q6" secondAttribute="trailing" constant="127" id="JoS-iU-3yH"/>
+                            <constraint firstItem="Ypw-Gt-g9o" firstAttribute="top" secondItem="jQK-Uo-nGG" secondAttribute="bottom" constant="15" id="NUa-A9-rDF"/>
+                            <constraint firstItem="ayr-vm-dLg" firstAttribute="leading" secondItem="BZI-ur-mjW" secondAttribute="leading" constant="52" id="Naz-sM-WZr"/>
+                            <constraint firstItem="n0Q-IC-Dks" firstAttribute="top" secondItem="Ypw-Gt-g9o" secondAttribute="bottom" constant="15" id="RMw-Ks-7VF"/>
+                            <constraint firstItem="sWH-mO-4q6" firstAttribute="top" secondItem="rco-Jx-JPd" secondAttribute="bottom" constant="19" id="TOI-dl-smp"/>
+                            <constraint firstItem="BZI-ur-mjW" firstAttribute="trailing" secondItem="Ypw-Gt-g9o" secondAttribute="trailing" constant="51" id="j3N-Ab-Ksx"/>
+                            <constraint firstItem="hKg-r6-ra0" firstAttribute="top" secondItem="n0Q-IC-Dks" secondAttribute="bottom" constant="53" id="oBP-2V-wdR"/>
+                            <constraint firstItem="hKg-r6-ra0" firstAttribute="top" secondItem="ayr-vm-dLg" secondAttribute="bottom" constant="4" id="snr-fN-kJH"/>
+                            <constraint firstItem="SP4-4R-px8" firstAttribute="top" secondItem="hKg-r6-ra0" secondAttribute="bottom" constant="22" id="uvs-sj-gS0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Birthpicker" destination="hKg-r6-ra0" id="dks-S5-U9J"/>
+                        <outlet property="Email" destination="jQK-Uo-nGG" id="V9Q-2E-KTI"/>
+                        <outlet property="Name" destination="Ypw-Gt-g9o" id="cY1-NB-K0r"/>
+                        <outlet property="Signup" destination="SP4-4R-px8" id="nGL-cg-nwq"/>
+                        <outlet property="Surname" destination="n0Q-IC-Dks" id="aGw-fO-cCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-49.295774647887328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OpenMeet_1024.png" width="1024" height="1024"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

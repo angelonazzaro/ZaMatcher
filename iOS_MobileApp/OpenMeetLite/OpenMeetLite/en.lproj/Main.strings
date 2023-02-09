@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "OpenMeet Lite"; ObjectID = "Gb8-cN-KNO"; */
+"Gb8-cN-KNO.text" = "OpenMeet Lite";
+
+/* Class = "UIButton"; configuration.title = "Continue"; ObjectID = "Yc9-EA-bqP"; */
+"Yc9-EA-bqP.configuration.title" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yc9-EA-bqP"; */
+"Yc9-EA-bqP.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "ooW-c3-LhJ"; */
+"ooW-c3-LhJ.placeholder" = "Email";
