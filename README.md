@@ -23,7 +23,9 @@
 
 
 # ZaMatcher 
-ZaMatcher is the machine learning module powering ![OpenMeet](https://github.com/sl1mSha4dey/openMeet_Classe03)'s user recommendation system. 
+ZaMatcher is the machine learning module powering ![OpenMeet](https://github.com/sl1mSha4dey/openMeet_Classe03)'s user recommendation system. <br />
+It is a machine learning model based on clustering and classification using **Agglomerative Clustering** and **SVC Classification** to recommend users. It has been built using `Jupyter Notebook` and `Python`. <br />
+If you want to know more about ZaMatcher you can read the documentation in the `docs` folder. 
 
 ## Table of Contents 
 - [Repository Contents](#repository-contents)
@@ -35,6 +37,16 @@ ZaMatcher is the machine learning module powering ![OpenMeet](https://github.com
   - [What about the mobile app](#what-about-the-mobile-app)
 
 ## Repository Contents
+The repository is structured as follows: 
+- `interests.csv`: contains the set of all interests used in the project; 
+- `us_cities.csv`: contains the set of all US cities used in the project along with their latitude and longitude coordinates; 
+- `create_dataset.ipynb`: contains the script necessary to create the dataset on which the clusterizer will be trained; 
+- `clustering.ipynb`: contains the implementations of the various clustering algoritms used to obtain the clusterier; 
+- `clustered_datset.csv`: contains the initial dataset with the an additional feature indicating each row's cluster label; 
+- `classifier.ipynb`: contains the implementations of the various classification algorithms used to obtain the classifier; 
+- `model.sav`: it's the exported classifier model; 
+- `user_predict.ipynb`: contains the script necessary to predict a new user and to retrain the model in case new features get added to the dataset;
+- `iOS_MobileApp`: contains the mobile app running on iOS used to deploy the model; 
 
 ## Installation Guide
 In order to install and use **ZaMatcher** on your environment you will need: 
@@ -79,10 +91,10 @@ jupyter-lab
 If you have installed jupyter-notebook, just type `jupyter notebook`. <br/>
 Once the jupter environment finishes loading, navigate to the folder where you have cloned the repository and have fun :blush:!
 
-## What about dependecies? 
+### What about dependecies? 
 If you are wondering about what dependecies we have used and what you have to install don't worry, we have included an installation script in the notebooks!
 
-## What about the mobile app? 
+### What about the mobile app? 
 Since the mobile application is still under construction, once we have reached a sort of stable version a new section describing the installation process of the mobile application will be uploaded. 
 
 ## Contributing 
