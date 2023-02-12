@@ -46,6 +46,7 @@ The repository is structured as follows:
 - `classifier.ipynb`: contains the implementations of the various classification algorithms used to obtain the classifier; 
 - `model.sav`: it's the exported classifier model; 
 - `user_predict.ipynb`: contains the script necessary to predict a new user and to retrain the model in case new features get added to the dataset;
+- `WebService`: contains the Flask app that is used to integrate the model with the mobile application; 
 - `iOS_MobileApp`: contains the mobile app running on iOS used to deploy the model; 
 
 ## Installation Guide
