@@ -41,7 +41,9 @@ class InterestFormController: UIViewController, UITableViewDelegate, UITableView
                 let rows = fileContent.components(separatedBy: "\n")
                 
                 for row in rows{
-                    items.append(row)
+                    if(!row.isEmpty){
+                        items.append(row)
+                    }
                 }
             }
             else{

@@ -54,7 +54,12 @@ class MapController: UIViewController, MKMapViewDelegate {
                 
                 if let popoverController = self.popoverPresentationController {
                     _ = popoverController.presentingViewController
-                    location_city = city
+                    if(city.isEmpty){
+                        location_city = "Invalid location"
+                    }
+                    else{
+                        location_city = city
+                    }
                     semaphore.signal()
                 }
                 
