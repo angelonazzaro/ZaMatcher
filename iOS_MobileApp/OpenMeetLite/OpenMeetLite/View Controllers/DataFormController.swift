@@ -7,6 +7,20 @@
 
 import UIKit
 
+extension String {
+    public subscript(_ idx: Int) -> Character {
+        self[self.index(self.startIndex, offsetBy: idx)]
+    }
+}
+
+var semaphore = DispatchSemaphore(value: 0)
+
+var location_city: String = "" {
+    didSet {
+            print("location_city was changed to \(location_city)")
+            
+        }
+}
 
 class DataFormController: UIViewController {
     
@@ -20,7 +34,6 @@ class DataFormController: UIViewController {
     
     var gender_pick = ""
     var searching_pick = ""
-    var location = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +41,20 @@ class DataFormController: UIViewController {
         //self.navigationItem.setHidesBackButton(true, animated: true)
     }
         
-
+    /*
+        A complex system of mirrors and levers for a fucking variable
+     */
+    @IBAction func didAddressClick(_ sender: UIButton) {
+        DispatchQueue.global(qos: .background).async {
+            semaphore = DispatchSemaphore(value: 0)
+            semaphore.wait()
+            
+            DispatchQueue.main.async {
+                self.Address.setTitle(location_city, for: .normal)
+            }
+        }
+    }
+    
     @IBAction func didButtonClick(_ sender: UIButton) {
         var message = ""
         
@@ -40,7 +66,7 @@ class DataFormController: UIViewController {
             message += "\nSelect a searched gender."
         }
         
-        if(location.count == 0){
+        if(location_city.count == 0){
             message += "\nSelect a location."
         }
     
@@ -51,6 +77,11 @@ class DataFormController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         else{
+            var m = doRetrieveMeeter()
+            m.gender = String(gender_pick.description[0])
+            m.searchingGender = String(searching_pick.description[0])
+            print(m)
+            doStoreMeeter(meeter: m)
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "Homepage", bundle: nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "tabbar_controller") as! TabController
@@ -58,13 +89,6 @@ class DataFormController: UIViewController {
         }
     }
   
-    
-    /*@IBAction func openAddressBtn(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "DataForm", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "map_form") as! MapController
-        self.present(nextViewController, animated: true, completion: nil)
-        
-    }*/
     
     func setupPopUpButtons() {
         let GenderPickerButtonClosure = { (action: UIAction) in
