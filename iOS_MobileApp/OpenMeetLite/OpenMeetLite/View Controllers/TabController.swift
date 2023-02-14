@@ -15,7 +15,10 @@ class TabController: UITabBarController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
   
-        Tabbar.items?[2].title = "Pippo"
+        let m = doRetrieveMeeter()
+        Tabbar.items?[2].title = m.name
+        
+        self.selectedIndex = 1
         
     }
 }

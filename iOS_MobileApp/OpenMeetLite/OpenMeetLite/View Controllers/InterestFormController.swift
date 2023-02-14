@@ -8,7 +8,10 @@
 import UIKit
 
 class InterestFormController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    var items: [String] = ["Alan", "Braus", "Adriana", "Mitchell", "Dani", "Jess", "Dan", "Meredith", "Dan", "Milad"]
+    /*var items: [String] = ["Alan", "Braus", "Adriana", "Mitchell", "Dani", "Jess", "Dan", "Meredith", "Dan", "Milad"]*/
+    var items = [String]()
+    let filename = "interest.txt"
+    
     var selectedItems = [String]()
     
     
@@ -19,8 +22,44 @@ class InterestFormController: UIViewController, UITableViewDelegate, UITableView
         self.navigationItem.setHidesBackButton(true, animated: true)
         //Tableview.allowsMultipleSelection = true
         //let tvc = TableViewController()
+        retrieveItemsFromFile()
         Tableview.dataSource = self
         Tableview.delegate = self
+    }
+    
+    func retrieveItemsFromFile(){
+        let fileManager = FileManager.default
+        let bundleURL = Bundle.main.bundleURL
+        
+        do {
+            let fileURLs = try fileManager.contentsOfDirectory(at: bundleURL, includingPropertiesForKeys: nil)
+            let fileURL = fileURLs.first(where: {$0.lastPathComponent == "interests.txt"})
+            if(fileURL != nil){
+                let fileContent = try String(contentsOf: fileURL!, encoding: .utf8 )
+                //print(fileContent.count)
+                
+                let rows = fileContent.components(separatedBy: "\n")
+                
+                for row in rows{
+                    items.append(row)
+                }
+            }
+            else{
+                print("Failed to find \(filename)")
+                showReadingWarning()
+            }
+          
+        } catch {
+            print("Failed to read contents of file \(filename)")
+            showReadingWarning()
+        }
+    }
+       
+    
+    func showReadingWarning(){
+        let alert = UIAlertController(title: "Unexpected Error", message: "Error in reading the interests.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Lmao", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func didClickConinue(_ sender: UIButton) {
@@ -31,16 +70,20 @@ class InterestFormController: UIViewController, UITableViewDelegate, UITableView
         }
         else
             if(selectedItems.count > 6){
-            message += "You can't select more than 6 interests"
+            message += "You can't select more than 6 interests."
             }
     
         
         if(message.count > 0){
-            let alert = UIAlertController(title: "Invalid inputs", message: message, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Invalid inputs", message: message + "\nYou have selected \(selectedItems.count).", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Oops", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
         else{
+            var m = doRetrieveMeeter()
+            m.interests = selectedItems.joined(separator: ", ")
+            print(m)
+            doStoreMeeter(meeter: m)
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "DataForm", bundle: nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "data_form") as! DataFormController
@@ -74,3 +117,4 @@ class InterestFormController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
 }
+

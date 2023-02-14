@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0AE4492995668300B507E5 /* interests.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE4482995668300B507E5 /* interests.txt */; };
 		DA58B9E92993D4EC00AAD752 /* DataForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58B9E82993D4EC00AAD752 /* DataForm.storyboard */; };
 		DA58BA072993F37800AAD752 /* DataFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA062993F37800AAD752 /* DataFormController.swift */; };
 		DA58BA0929941A0100AAD752 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58BA0829941A0100AAD752 /* Homepage.storyboard */; };
 		DA58BA0B2994265E00AAD752 /* HomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0A2994265E00AAD752 /* HomepageController.swift */; };
 		DA58BA0D29942FA900AAD752 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0C29942FA900AAD752 /* TabController.swift */; };
 		DA58BA0F2994362A00AAD752 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA0E2994362A00AAD752 /* MapController.swift */; };
-		DA58BA1129944AA100AAD752 /* Meeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA1029944AA100AAD752 /* Meeter.swift */; };
 		DA58BA1329944C6F00AAD752 /* InterestForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA58BA1229944C6F00AAD752 /* InterestForm.storyboard */; };
 		DA58BA1529944E6100AAD752 /* InterestFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58BA1429944E6100AAD752 /* InterestFormController.swift */; };
+		DA7475EB299ACA7C0035C123 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7475E8299ACA7C0035C123 /* female.png */; };
+		DA7475EC299ACA7C0035C123 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7475E9299ACA7C0035C123 /* male.png */; };
+		DA7475ED299ACA7C0035C123 /* nonbin.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7475EA299ACA7C0035C123 /* nonbin.png */; };
+		DA7475F0299AFB4D0035C123 /* Meeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7475EF299AFB4D0035C123 /* Meeter.swift */; };
 		DAD94A352992CA01003AB24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A342992CA01003AB24E /* AppDelegate.swift */; };
 		DAD94A372992CA01003AB24E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A362992CA01003AB24E /* SceneDelegate.swift */; };
 		DAD94A392992CA01003AB24E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD94A382992CA01003AB24E /* ViewController.swift */; };
@@ -48,15 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0AE4482995668300B507E5 /* interests.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interests.txt; sourceTree = "<group>"; };
 		DA58B9E82993D4EC00AAD752 /* DataForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataForm.storyboard; sourceTree = "<group>"; };
 		DA58BA062993F37800AAD752 /* DataFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormController.swift; sourceTree = "<group>"; };
 		DA58BA0829941A0100AAD752 /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
 		DA58BA0A2994265E00AAD752 /* HomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
 		DA58BA0C29942FA900AAD752 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		DA58BA0E2994362A00AAD752 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
-		DA58BA1029944AA100AAD752 /* Meeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeter.swift; sourceTree = "<group>"; };
 		DA58BA1229944C6F00AAD752 /* InterestForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterestForm.storyboard; sourceTree = "<group>"; };
 		DA58BA1429944E6100AAD752 /* InterestFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestFormController.swift; sourceTree = "<group>"; };
+		DA7475E8299ACA7C0035C123 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		DA7475E9299ACA7C0035C123 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		DA7475EA299ACA7C0035C123 /* nonbin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonbin.png; sourceTree = "<group>"; };
+		DA7475EF299AFB4D0035C123 /* Meeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeter.swift; sourceTree = "<group>"; };
 		DAD94A312992CA01003AB24E /* OpenMeetLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMeetLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD94A342992CA01003AB24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD94A362992CA01003AB24E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA7475EE299ACA940035C123 /* Meeter Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA7475E8299ACA7C0035C123 /* female.png */,
+				DA7475E9299ACA7C0035C123 /* male.png */,
+				DA7475EA299ACA7C0035C123 /* nonbin.png */,
+			);
+			path = "Meeter Images";
+			sourceTree = "<group>";
+		};
 		DAD94A282992CA01003AB24E = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,7 @@
 		DAD94A332992CA01003AB24E /* OpenMeetLite */ = {
 			isa = PBXGroup;
 			children = (
+				DA0AE4482995668300B507E5 /* interests.txt */,
 				DAD94A6A2992D6E8003AB24E /* View Controllers */,
 				DAD94A692992D6D7003AB24E /* Storyboards */,
 				DAD94A642992CA83003AB24E /* Images */,
@@ -130,7 +149,7 @@
 				DAD94A362992CA01003AB24E /* SceneDelegate.swift */,
 				DAD94A3D2992CA02003AB24E /* Assets.xcassets */,
 				DAD94A422992CA02003AB24E /* Info.plist */,
-				DA58BA1029944AA100AAD752 /* Meeter.swift */,
+				DA7475EF299AFB4D0035C123 /* Meeter.swift */,
 			);
 			path = OpenMeetLite;
 			sourceTree = "<group>";
@@ -155,6 +174,7 @@
 		DAD94A642992CA83003AB24E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DA7475EE299ACA940035C123 /* Meeter Images */,
 				DAD94A652992CA8C003AB24E /* OpenMeet_1024.png */,
 			);
 			path = Images;
@@ -203,6 +223,8 @@
 			dependencies = (
 			);
 			name = OpenMeetLite;
+			packageProductDependencies = (
+			);
 			productName = OpenMeetLite;
 			productReference = DAD94A312992CA01003AB24E /* OpenMeetLite.app */;
 			productType = "com.apple.product-type.application";
@@ -278,6 +300,8 @@
 				Base,
 			);
 			mainGroup = DAD94A282992CA01003AB24E;
+			packageReferences = (
+			);
 			productRefGroup = DAD94A322992CA01003AB24E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +323,11 @@
 				DAD94A412992CA02003AB24E /* LaunchScreen.storyboard in Resources */,
 				DAD94A3E2992CA02003AB24E /* Assets.xcassets in Resources */,
 				DAD94A3C2992CA01003AB24E /* Main.storyboard in Resources */,
+				DA0AE4492995668300B507E5 /* interests.txt in Resources */,
 				DAD94A662992CA8C003AB24E /* OpenMeet_1024.png in Resources */,
+				DA7475EB299ACA7C0035C123 /* female.png in Resources */,
+				DA7475EC299ACA7C0035C123 /* male.png in Resources */,
+				DA7475ED299ACA7C0035C123 /* nonbin.png in Resources */,
 				DAD94A6C299302DC003AB24E /* RegistrationForm.storyboard in Resources */,
 				DA58BA0929941A0100AAD752 /* Homepage.storyboard in Resources */,
 			);
@@ -332,8 +360,8 @@
 				DA58BA0B2994265E00AAD752 /* HomepageController.swift in Sources */,
 				DAD94A6E2993056A003AB24E /* RegistrationController.swift in Sources */,
 				DA58BA0D29942FA900AAD752 /* TabController.swift in Sources */,
-				DA58BA1129944AA100AAD752 /* Meeter.swift in Sources */,
 				DA58BA1529944E6100AAD752 /* InterestFormController.swift in Sources */,
+				DA7475F0299AFB4D0035C123 /* Meeter.swift in Sources */,
 				DA58BA0F2994362A00AAD752 /* MapController.swift in Sources */,
 				DAD94A372992CA01003AB24E /* SceneDelegate.swift in Sources */,
 			);
@@ -517,6 +545,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenMeetLite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "OpenMeet Lite";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -551,6 +580,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenMeetLite/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "OpenMeet Lite";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

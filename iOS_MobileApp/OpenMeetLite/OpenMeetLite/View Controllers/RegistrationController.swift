@@ -7,6 +7,9 @@
 
 import UIKit
 
+extension Date{
+    var age: Int { Calendar.current.dateComponents([.year], from: self, to: Date()).year! }
+}
 
 class RegistrationController: UIViewController, UITextFieldDelegate {
     
@@ -58,7 +61,7 @@ class RegistrationController: UIViewController, UITextFieldDelegate {
             message += "\nSurname field empty."
         }
         
-        if(!verifyBirthDate(birthDate: Birthpicker.date)){
+        if(Birthpicker.date.age < 18){
             message += "\nYou're too little, maybe you can let your mom sign up."
         }
         
@@ -69,6 +72,8 @@ class RegistrationController: UIViewController, UITextFieldDelegate {
             self.present(alert, animated: true, completion: nil)
         }
         else{
+            let m = Meeter(name: Name.text!, surname: Surname.text!, gender: "", searchingGender: "", age: Birthpicker.date.age, interests: "", latitude: 0.0, longitude: 0.0)
+            doStoreMeeter(meeter: m)
             
             let storyBoard: UIStoryboard = UIStoryboard(name: "InterestForm", bundle: nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "interest_form") as! InterestFormController
@@ -79,18 +84,6 @@ class RegistrationController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func verifyBirthDate(birthDate: Date) -> Bool{
-        let eighteenYearsAgo = Calendar.current.date(byAdding: .year, value: -18, to: Date())!
-        print(eighteenYearsAgo)
-        if birthDate <= eighteenYearsAgo {
-            print("User is at least 18 years old.")
-            return true
-        } else {
-            print("User is under 18 years old.")
-            return false;
-        }
-    
-    }
 }
 
 

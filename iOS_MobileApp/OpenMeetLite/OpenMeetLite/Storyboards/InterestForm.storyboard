@@ -27,9 +27,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-cZ-3WV">
-                                <rect key="frame" x="137" y="698" width="119" height="50"/>
+                                <rect key="frame" x="131.66666666666666" y="698" width="129.99999999999997" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="N4y-sQ-ejx"/>
+                                    <constraint firstAttribute="width" constant="130" id="ake-4A-BYO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="arrow.forward" catalog="system" title="Continue"/>
@@ -66,15 +67,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Pt8-Nc-A8Y" firstAttribute="centerX" secondItem="P5T-f5-8cL" secondAttribute="centerX" id="0yv-bl-yba"/>
+                            <constraint firstItem="MbX-cZ-3WV" firstAttribute="centerX" secondItem="P5T-f5-8cL" secondAttribute="centerX" id="6Pz-Bk-0bU"/>
                             <constraint firstItem="Pt8-Nc-A8Y" firstAttribute="top" secondItem="FaF-Pr-j79" secondAttribute="bottom" constant="65" id="Lsb-af-d5l"/>
                             <constraint firstItem="Pt8-Nc-A8Y" firstAttribute="top" secondItem="Vcx-d3-KiF" secondAttribute="bottom" constant="8" symbolic="YES" id="MPT-Dr-QZw"/>
-                            <constraint firstItem="idj-hk-ieM" firstAttribute="trailing" secondItem="MbX-cZ-3WV" secondAttribute="trailing" constant="137" id="T5p-pO-VCB"/>
                             <constraint firstItem="Vcx-d3-KiF" firstAttribute="leading" secondItem="idj-hk-ieM" secondAttribute="leading" constant="16" id="iMD-Nl-5OB"/>
                             <constraint firstItem="idj-hk-ieM" firstAttribute="trailing" secondItem="Pt8-Nc-A8Y" secondAttribute="trailing" constant="16" id="mTA-RE-DNA"/>
                             <constraint firstItem="MbX-cZ-3WV" firstAttribute="top" secondItem="Pt8-Nc-A8Y" secondAttribute="bottom" constant="24" id="ode-u6-Q0e"/>
-                            <constraint firstItem="MbX-cZ-3WV" firstAttribute="centerX" secondItem="P5T-f5-8cL" secondAttribute="centerX" id="rrW-Wj-Jjz"/>
                             <constraint firstItem="idj-hk-ieM" firstAttribute="bottom" secondItem="MbX-cZ-3WV" secondAttribute="bottom" constant="70" id="uWN-oL-ybN"/>
-                            <constraint firstItem="idj-hk-ieM" firstAttribute="trailing" secondItem="MbX-cZ-3WV" secondAttribute="trailing" constant="137" id="v51-gg-MpI"/>
                             <constraint firstItem="idj-hk-ieM" firstAttribute="trailing" secondItem="FaF-Pr-j79" secondAttribute="trailing" constant="126" id="yFc-xT-hpf"/>
                         </constraints>
                     </view>
