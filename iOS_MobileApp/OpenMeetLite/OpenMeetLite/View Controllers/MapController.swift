@@ -10,10 +10,11 @@ import MapKit
 
 class MapController: UIViewController, MKMapViewDelegate {
     
-    
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var Done: UIButton!
-
+    
+    var coordinate = CLLocationCoordinate2D()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.navigationItem.setHidesBackButton(true, animated: true)
@@ -28,8 +29,8 @@ class MapController: UIViewController, MKMapViewDelegate {
     @objc func handleTap(_ gestureRecognizer: UITapGestureRecognizer) {
         if(gestureRecognizer.state == .ended){
             let location = gestureRecognizer.location(in: MapView)
-            let coordinate = MapView.convert(location, toCoordinateFrom: MapView)
-            
+            coordinate = MapView.convert(location, toCoordinateFrom: MapView)
+            print(coordinate)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             
@@ -39,7 +40,40 @@ class MapController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    func setCityFromCoordinates(coordinates: CLLocationCoordinate2D) {
+        let location = CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+            if let error = error {
+                print("Reverse geocode failed with error: \(error)")
+            }
+            if let placemarks = placemarks, let placemark = placemarks.first
+            {
+                let city = placemark.locality ?? ""
+                print(city)
+                
+                if let popoverController = self.popoverPresentationController {
+                    _ = popoverController.presentingViewController
+                    location_city = city
+                    semaphore.signal()
+                }
+                
+            }
+            
+        }
+    }
+    
+    
     @IBAction func doneClick(_ sender: UIButton) {
+       
+        var m = doRetrieveMeeter()
+        m.latitude = coordinate.latitude
+        m.longitude = coordinate.longitude
+        print(m)
+        doStoreMeeter(meeter: m)
+        
+        setCityFromCoordinates(coordinates: coordinate)
+
         
         self.dismiss(animated: true)
     }
