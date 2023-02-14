@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenMeet Lite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbI-2E-OOK">
-                                <rect key="frame" x="125" y="217" width="141" height="27"/>
+                                <rect key="frame" x="124" y="217" width="141" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="5KT-Xx-07h"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks8-df-Fvv">
-                                <rect key="frame" x="138" y="701" width="118" height="50"/>
+                                <rect key="frame" x="137" y="701" width="118" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Eiv-g0-jfD"/>
                                     <constraint firstAttribute="width" constant="118" id="p5c-jy-GvP"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button toolTip="Make a Selection" opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzc-HZ-JrL">
-                                <rect key="frame" x="132" y="352" width="129" height="34"/>
+                                <rect key="frame" x="132" y="352" width="128" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="GenderChooser">
                                     <color key="titleColor" name="AccentColor"/>
@@ -67,14 +67,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button toolTip="Make a Selection" opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lID-Fv-PdX">
-                                <rect key="frame" x="92" y="480" width="209" height="34"/>
+                                <rect key="frame" x="92" y="480" width="208" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="SearchingGenderChooser">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpC-bO-ZoB">
-                                <rect key="frame" x="117.66666666666667" y="585" width="157.66666666666663" height="36"/>
+                                <rect key="frame" x="117.66666666666667" y="585" width="156.66666666666657" height="36"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Select a location">

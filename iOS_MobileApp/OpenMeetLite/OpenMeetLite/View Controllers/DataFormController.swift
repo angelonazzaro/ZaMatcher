@@ -69,6 +69,9 @@ class DataFormController: UIViewController {
         if(location_city.count == 0){
             message += "\nSelect a location."
         }
+        else if(location_city == "Invalid location"){
+            message += "\nSelect a valid location."
+        }
     
         
         if(message.count > 0){
@@ -98,7 +101,7 @@ class DataFormController: UIViewController {
         let SearchingPickerButtonClosure = { (action: UIAction) in
                 self.searching_pick = action.title
             }
-        
+
         
         Genderpick.menu = UIMenu(children: [
                 Promptitem,
@@ -118,6 +121,7 @@ class DataFormController: UIViewController {
         ])
         Searchingchooser.showsMenuAsPrimaryAction = true
     }
+    
 }
 
 

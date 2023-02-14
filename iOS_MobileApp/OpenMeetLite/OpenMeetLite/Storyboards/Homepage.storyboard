@@ -21,6 +21,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Df-wD-PI9">
                                 <rect key="frame" x="0.0" y="84" width="393" height="685"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="685" id="L9H-7c-kYF"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-Na-dw5">
                                 <rect key="frame" x="172.66666666666666" y="724" width="48" height="35"/>
@@ -138,29 +141,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="F8l-j1-jO0">
-                                <rect key="frame" x="-1" y="-1" width="392" height="852"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" id="981-zY-b8G">
+                                <rect key="frame" x="0.0" y="0.0" width="392" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenMeet_1024.png" id="SDp-vd-z3w">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenMeet_1024.png" id="a0u-Xc-kvO">
                                         <rect key="frame" x="131" y="265" width="130" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="αlpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJH-fu-YEr">
-                                        <rect key="frame" x="25" y="397" width="342" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="αlpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pG-85-wIo">
+                                        <rect key="frame" x="25" y="396" width="342" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="342" id="avy-0q-Da9"/>
+                                            <constraint firstAttribute="width" constant="342" id="aOU-bx-yG0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="gl8-zs-KUn"/>
+                                <viewLayoutGuide key="safeArea" id="WYW-Yi-ATG"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="gl8-zs-KUn" firstAttribute="bottom" secondItem="aJH-fu-YEr" secondAttribute="bottom" constant="313" id="SDc-3j-6Wi"/>
-                                    <constraint firstItem="aJH-fu-YEr" firstAttribute="centerX" secondItem="F8l-j1-jO0" secondAttribute="centerX" id="kBp-Qv-xon"/>
+                                    <constraint firstItem="WYW-Yi-ATG" firstAttribute="bottom" secondItem="8pG-85-wIo" secondAttribute="bottom" constant="313" id="W0T-sJ-Mh0"/>
+                                    <constraint firstItem="8pG-85-wIo" firstAttribute="centerX" secondItem="981-zY-b8G" secondAttribute="centerX" id="jov-BF-Apy"/>
                                 </constraints>
                             </view>
                         </subviews>
