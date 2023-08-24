@@ -34,7 +34,7 @@ If you want to know more about ZaMatcher you can read the documentation in the `
   - [Installing Jupyter](#installing-jupyter)
   - [Clone the repo](#clone-the-repo)
   - [What about dependecies?](#what-about-dependecies)
-  - [What about the mobile app](#what-about-the-mobile-app)
+- [What about the mobile app](#what-about-the-mobile-app)
 
 ## Repository Contents
 The repository is structured as follows: 
