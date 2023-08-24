@@ -55,10 +55,10 @@ In order to install and use **ZaMatcher** on your environment you will need:
 - `Jupyter Notebook` or `Jupyter Lab` 
 
 ### Installing Python 
-Depending on your OS the process for installing python may be different from other others'. We recommed to follow the official guide [Python](https://www.python.org/downloads/).  
+Depending on your OS the process for installing python may be different from others. We recommed to follow the official [Python guide](https://www.python.org/downloads/).  
 
 ### Installing Jupyter
-In order to install jupyter it is **mandatory** to have Python installed on your machine, so if you do not have Python on your machine please gp back the previous step. 
+In order to install jupyter it is **mandatory** to have Python installed on your machine, so if you do not have Python on your machine please go back to the previous step. 
 To install JupyterLab open up your terminal and type: 
 ```bash
 pip install jupyterlab
